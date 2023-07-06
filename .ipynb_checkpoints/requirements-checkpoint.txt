@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+keras 
+tensorflow
+statistics
+random
+flask
+cv2

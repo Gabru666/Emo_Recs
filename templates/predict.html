@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Output Text Example</title>
+</head>
+<body>
+    <h1>{{ output }}</h1>
+    
+    <audio id="audio-player" src="/play_music" type="audio/mpeg" controls></audio>
+
+<button id="play-button">Play</button>
+<button id="pause-button">Pause</button>
+<button id="stop-button">Stop</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    var audio = $('#audio-player')[0]; // Get the audio player element
+
+    $('#play-button').click(function() {
+      audio.play(); // Start playing the audio
+    });
+
+    $('#pause-button').click(function() {
+      audio.pause(); // Pause the audio
+    });
+
+    $('#stop-button').click(function() {
+      audio.pause(); // Pause the audio
+      audio.currentTime = 0; // Set the audio playback position to the beginning
+    });
+  });
+</script>
+
+</body>
+</html>
